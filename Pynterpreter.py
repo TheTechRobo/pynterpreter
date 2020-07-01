@@ -1,4 +1,4 @@
-print("Starting pynterpreter...")
+print("Starting pynterpreter v.1.1, the most useless project ever...")
 def p(*args):
     print(*args, end="\r", sep="")
 
