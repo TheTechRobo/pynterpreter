@@ -17,7 +17,7 @@ class Metadata:
 p("Creating blank command list...")
 commands = []
 p("All done.                        \n")
-print("NOTE: Commands will not be rum until you use command `sync()'.")
+print("NOTE: Commands will not be run until you use command `sync()'.")
 while True:
     command = input(">>> ")
     if "sync()" in command:
