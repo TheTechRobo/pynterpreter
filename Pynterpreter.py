@@ -16,10 +16,11 @@ class Metadata:
     pass
 p("Creating blank command list...")
 commands = []
-p("All done.\n")
+p("All done.                        \n")
 
 while True:
     command = input(">>> ")
     p("Adding command to list...")
     commands.append(command)
+    p("                         \n")
     del command
