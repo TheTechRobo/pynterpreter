@@ -20,6 +20,8 @@ p("All done.                        \n")
 
 while True:
     command = input(">>> ")
+    if "sync()" in command:
+        sync()
     p("Adding command to list...")
     commands.append(command)
     p("                             ")
