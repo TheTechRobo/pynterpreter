@@ -22,5 +22,5 @@ while True:
     command = input(">>> ")
     p("Adding command to list...")
     commands.append(command)
-    p("                         \n")
+    p("                             ")
     del command
