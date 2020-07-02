@@ -7,6 +7,7 @@ class Builtins:
         global commands
         exec(commands)
         commands = ""
+        print("                              ", end="\r")
 sync = Builtins.sync
 print("Setting up metadata...", end="\r")
 class Metadata:
@@ -16,6 +17,7 @@ commands = ""
 print("All done.                        \n", end="\r")
 print("NOTE: Commands will not be run until you use command `sync()'.")
 while True:
+    print("                                         ", end="\r")
     command = input(">>> ")
     if "sync()" in command:
         sync()
