@@ -19,7 +19,7 @@ while True:
     command = input(">>> ")
     if "sync()" in command:
         sync()
-    p("Adding command to string...")
+    print("Adding command to string...", end="\r")
     commands += command
     commands += "\n"
     print("                             ", end="\r")
