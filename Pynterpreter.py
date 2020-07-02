@@ -1,21 +1,19 @@
 print("Starting pynterpreter v.1.1, the most useless project ever...")
-def p(*args):
-    print(*args, end="\r", sep="")
 
-p("Creating internal functions...")
+print("Creating internal functions...", end="\r")
 class Builtins:
     def sync():
-        p("Running commands...")
+        print("Running commands...", end="\r")
         global commands
         exec(commands)
-        commands = ''''''
+        commands = ""
 sync = Builtins.sync
-p("Setting up metadata...")
+print("Setting up metadata...", end="\r")
 class Metadata:
     pass
-p("Creating blank command string...")
-commands = ''''''
-p("All done.                        \n")
+print("Creating blank command string...", end="\r")
+commands = ""
+print("All done.                        \n", end="\r")
 print("NOTE: Commands will not be run until you use command `sync()'.")
 while True:
     command = input(">>> ")
@@ -24,5 +22,5 @@ while True:
     p("Adding command to string...")
     commands += command
     commands += "\n"
-    p("                             ")
+    print("                             ", end="\r")
     del command
